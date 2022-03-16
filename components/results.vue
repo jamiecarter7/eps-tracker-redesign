@@ -21,9 +21,10 @@
           class="nhsuk-table__row"
         >
           <td role="cell" class="nhsuk-table__cell">
-            <span class="nhsuk-table-responsive__heading">Prescription ID </span
-            ><nuxt-link :to="'prescription/' + result.rxId"
-              >{{ result.rxId }} </nuxt-link
+            <span class="nhsuk-table-responsive__heading">Prescription ID</span
+            ><nuxt-link :to="'prescription/' + result.rxId">{{
+              result.rxId
+            }}</nuxt-link
             ><button
               class="button-grey"
               @click.prevent="copy(result.rxId)"
