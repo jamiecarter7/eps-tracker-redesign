@@ -23,8 +23,14 @@
           <td role="cell" class="nhsuk-table__cell">
             <span class="nhsuk-table-responsive__heading">Prescription ID </span
             ><nuxt-link :to="'prescription/' + result.rxId"
-              >{{ result.rxId }}
-            </nuxt-link><button class="button-grey" @click.prevent="copy(result.rxId)" :ref="result.rxId">copy id</button>
+              >{{ result.rxId }} </nuxt-link
+            ><button
+              class="button-grey"
+              @click.prevent="copy(result.rxId)"
+              :ref="result.rxId"
+            >
+              copy id
+            </button>
             <!-- <button class="button-grey">copy id</button> -->
           </td>
           <td role="cell" class="nhsuk-table__cell">
@@ -271,16 +277,17 @@ export default Vue.extend({
       }
       this.results.push(rxObject)
     },
-    getRandomIntBetween(min: number, max: number) {
+    getRandomIntBetween(min: number, max: number): number {
       return Math.random() * (max - min) + min
     },
-    getRandomInt(max: number) {
+    getRandomInt(max: number): number {
       return Math.floor(Math.random() * max)
     },
     copy(rxId: string) {
-      this.$refs.(rxId).focus();
-      document.execCommand('copy');
-    }
+      // @ts-nocheck
+      // this.$refs.(rxId).focus();
+      // document.execCommand('copy');
+    },
   },
 })
 </script>

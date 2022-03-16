@@ -27,8 +27,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'node_modules/nhsuk-frontend/packages/nhsuk'
-    // 'nhsuk-frontend/packages/nhsuk'
+    // 'node_modules/nhsuk-frontend/packages/nhsuk'
+    // ''
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

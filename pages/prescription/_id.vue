@@ -430,7 +430,7 @@ export default Vue.extend({
   },
   mounted() {
     // if (this.$route.query.status === undefined) {
-      this.createStatus()
+    this.createStatus()
     // } else {
     //   for (const statusObjCheck of this.statusOptions) {
     //     if (statusObjCheck.name as string === this.$route.query) {
@@ -440,7 +440,7 @@ export default Vue.extend({
     // }
   },
   methods: {
-    createStatus(): { name: string; color: string } {
+    createStatus(): void {
       this.status =
         this.statusOptions[this.getRandomInt(this.statusOptions.length)]
     },

@@ -23,3 +23,7 @@
 import Vue from 'vue'
 export default Vue.extend({})
 </script>
+
+<style>
+@import '~/node_modules/nhsuk-frontend/dist/nhsuk-5.2.1.min.css';
+</style>
